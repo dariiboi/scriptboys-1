@@ -1,26 +1,23 @@
 int max;
 int min;
+boolean isPrime;
 void setup() {
   //print primes until max
-  max = 100;
-  min = 2;
+  max = 10;
+  min = 3;
 }
 
 void draw() {
   //n is the number in between min and max
-  
+
   for (int n = min; n< max; n++) {
     for (int d = 1; d < n; d++) {
-      if (n%d == 0&&d!=1||d!=n) {
-        //not a primed
-        d=n; //breaks for loop
-      } else {
-        PrintNum(n);
-      }
+      
     }
   }
+  noLoop();
 }
 
 void PrintNum(int prime) {
-  print (prime);
+  println (prime);
 }
